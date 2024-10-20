@@ -4,12 +4,18 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        About Me
+        Hi!
       </h1>
       <p className="mb-4">
-        {`I'm a 17 year old software/DevOps engineer`}
+        {`Welcome to my little corner of the internet :)`}
+      </p>
+      <p className="mb=4">
+        {'Feel free to look around!'}
       </p>
       <div className="my-8">
+        <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+          Blog Posts
+        </h1>
         <BlogPosts />
       </div>
     </section>
