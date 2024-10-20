@@ -1,11 +1,15 @@
-import { BlogPosts } from 'app/components/posts'
+import { Metadata } from 'next';
+import Projects from './Projects';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: "Patchy's Projects",
+};
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        WIP
-      </h1>
+    <section className="p-4 bg-black text-white rounded-lg shadow-md">
+      <Projects />
     </section>
-  )
+  );
 }
