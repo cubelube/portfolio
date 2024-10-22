@@ -16,6 +16,35 @@ export default function Projects() {
       <div className="mb-4 p-4 border border-gray-700 rounded-lg hover:shadow-lg transition-shadow duration-200">
         <h2 
           className="text-xl font-semibold cursor-pointer flex items-center justify-between"
+          onClick={() => toggleProjectDetails('theo')}
+        >
+          <span>Theo (WIP Chess Engine)</span>
+          <span>{expandedProject === 'theo' ? '▼' : '▶'}</span>
+        </h2>
+        {expandedProject === 'theo' && (
+          <div className="ml-4 mt-2">
+            <p className="mb-2">
+              A terminal-based chess engine. Highly WIP.
+            </p>
+            <p className="mb-4">
+              <strong>Technologies:</strong> Rust
+            </p>
+            <p className="mb-4">
+              <strong>Highlights:</strong>
+              <ul className="list-disc list-inside">
+                <li>None yet!</li>
+              </ul>
+            </p>
+            <p className="mb-4">
+              <strong><a href="https://github.com/patchydev/theo" className="text-blue-400" rel="noopener noreferrer" target="_blank">https://github.com/patchydev/theo</a></strong>
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div className="mb-4 p-4 border border-gray-700 rounded-lg hover:shadow-lg transition-shadow duration-200">
+        <h2 
+          className="text-xl font-semibold cursor-pointer flex items-center justify-between"
           onClick={() => toggleProjectDetails('ticTacToe')}
         >
           <span>Tic-Tac-Toe Bot (Terminal-based)</span>
@@ -37,7 +66,7 @@ export default function Projects() {
               </ul>
             </p>
             <p className="mb-4">
-              <strong><a href="https://github.com/patchydev/tictactoe" className="text-blue-400">https://github.com/patchydev/tictactoe</a></strong>
+              <strong><a href="https://github.com/patchydev/tictactoe" className="text-blue-400" rel="noopener noreferrer" target="_blank">https://github.com/patchydev/tictactoe</a></strong>
             </p>
           </div>
         )}
@@ -67,7 +96,7 @@ export default function Projects() {
               </ul>
             </p>
             <p className="mb-4">
-              <strong><a href="https://github.com/patchydev/web-server" className="text-blue-400">https://github.com/patchydev/web-server</a></strong>
+              <strong><a href="https://github.com/patchydev/web-server" className="text-blue-400" rel="noopener noreferrer" target="_blank">https://github.com/patchydev/web-server</a></strong>
             </p>
           </div>
         )}
@@ -97,7 +126,7 @@ export default function Projects() {
               </ul>
             </p>
             <p className="mb-4">
-              <strong><a href="https://github.com/patchydev/slint-calculator-app" className="text-blue-400">https://github.com/patchydev/slint-calculator-app</a></strong>
+              <strong><a href="https://github.com/patchydev/slint-calculator-app" className="text-blue-400" rel="noopener noreferrer" target="_blank">https://github.com/patchydev/slint-calculator-app</a></strong>
             </p>
           </div>
         )}
